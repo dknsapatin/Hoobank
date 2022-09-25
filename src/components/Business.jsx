@@ -8,10 +8,12 @@ const FeatureCard = ({ icon, title, content, index }) => (
       index !== features.length - 1 ? 'mb-6' : 'mb-0'
     } feature-card`}
   >
-    <div>
-      <img src={icon} alt='icon' className='w-[5%] h-[50%] object-contain' />
-      <p className={`text-semibold text-white`}>{title}</p>
-      <p className={`${styles.paragraph}`}>{content}</p>
+    <div
+      className={`w-[64px] h-[64px] rounded-full bg-dimBlue ${styles.flexCenter}`}
+    >
+      <img src={icon} alt='icon' className='w-[50%] h-[50%] object-contain' />
+      {/* <p className={`text-semibold text-white`}>{title}</p>
+      <p className={`${styles.paragraph}`}>{content}</p> */}
     </div>
   </div>
 );
@@ -19,7 +21,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Business = () => (
   <section id='features' className={layout.section}>
     {/* Left side Business */}
-    <div className={layout.section}>
+    <div className={layout.sectionInfo}>
       <h2 className={`${styles.heading2}`}>
         You do the business, <br className='sm:block hidden' /> we'll handle the
         money
