@@ -12,8 +12,16 @@ const FeatureCard = ({ icon, title, content, index }) => (
       className={`w-[64px] h-[64px] rounded-full bg-dimBlue ${styles.flexCenter}`}
     >
       <img src={icon} alt='icon' className='w-[50%] h-[50%] object-contain' />
-      {/* <p className={`text-semibold text-white`}>{title}</p>
-      <p className={`${styles.paragraph}`}>{content}</p> */}
+    </div>
+    <div className='flex flex-1 flex-col ml-3'>
+      <h4 className='text-semibold text-white font-poppins text-[18px] leading-[23px] mb-1'>
+        {title}
+      </h4>
+      <p
+        className={`${styles.paragraph} text-normal text-dimWhite font-poppins text-[16px] leading-[24px] mb-1`}
+      >
+        {content}
+      </p>
     </div>
   </div>
 );
